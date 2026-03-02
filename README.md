@@ -104,7 +104,7 @@ Contém os testes End-to-End (E2E) da aplicação, escritos com Playwright.
 
 Para iniciar o projeto em modo de desenvolvimento:
 
-- Clone o repositório com o comando: `git clone https://github.com/pet-ads/wecomp-new.git`
+- Clone o repositório com o comando: `git clone https://github.com/pet-ads/wecomp-vii.git`
 - Instale o gerenciador de dependências **Yarn** com o comando: `npm install -g yarn`
 - Navegue até a pasta do projeto no explorador de arquivos e abra-a utilizando o **Git Bash**.
 - No terminal do Git Bash, execute o script: `sh scripts/run-dev.sh`
