@@ -4,7 +4,6 @@ export type Sections =
   | "Sponsors"
   | "Organization"
   | "Programming"
-  | "Marathon"
   | "Highlights"
   | "Locations"
   | "Contact"

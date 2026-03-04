@@ -19,7 +19,7 @@ import TiagoTamega from "../images/lecturers/TiagoTamega.svg";
 
 export const programmingContent: ProgrammingProps[] = [
   {
-    name: "Abertura VI WECOMP + InterIF",
+    name: "Abertura VI WECOMP",
     image: onovolav,
     imageDescription: "OnovoLab",
     bio: "",

@@ -5,7 +5,6 @@ import {
   Sponsors,
   Organization,
   Programming,
-  Marathon,
   Highlights,
   Locations,
   Contact,
@@ -25,7 +24,6 @@ export default function Home() {
         <Sponsors />
         <Organization />
         <Programming />
-        <Marathon />
         <Highlights />
         <Locations />
         <Contact />

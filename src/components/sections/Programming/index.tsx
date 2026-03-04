@@ -32,7 +32,7 @@ export default function Programming() {
     <Section
       title="Programação"
       currentSectionId="Programming"
-      nextSectionId="Marathon"
+      nextSectionId="Highlights"
     >
       <Container>
         {soonOrNot ? (
