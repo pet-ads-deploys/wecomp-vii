@@ -73,7 +73,8 @@ export default function FAQChat() {
 
   return (
     <ChatWrapper>
-      <ToggleButton onClick={toggleChat}>
+      <ToggleButton onClick={toggleChat}
+      aria-label={isOpen ? "Fechar chat de suporte" : "Abrir chat de suporte"}>
         {isOpen ? (
           <IoCloseOutline size="1.25rem" />
         ) : (
@@ -88,7 +89,7 @@ export default function FAQChat() {
               const isLast = index === chat.length - 1;
               return msg.from === "grace" ? (
                 <MessageLeft key={index}>
-                  <img src={GraceAvatar} alt="Grace" draggable={false} />
+                  <img src={GraceAvatar} alt="Assistente Virtual Grace" draggable={false} />
                   <span ref={isLast ? buttonRef : null}>{msg.text}</span>
                 </MessageLeft>
               ) : (
