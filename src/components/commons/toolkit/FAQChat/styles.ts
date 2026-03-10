@@ -1,10 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const ChatWrapper = styled.div`
   position: fixed;
   bottom: .75rem;
   right: 1.25rem;
-  z-index: 10;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
 `;
 
 export const ToggleButton = styled.button`
@@ -16,6 +19,11 @@ export const ToggleButton = styled.button`
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+`;
+
+const fadeIn = keyframes`
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 `;
 
 export const ChatBox = styled.div`
@@ -39,6 +47,8 @@ export const ChatBox = styled.div`
     height: 70vh;
     width: 580px;
   }
+
+  animation: ${fadeIn} 0.3s ease-out;
 `;
 
 export const ChatContainer = styled.div`
@@ -48,6 +58,14 @@ export const ChatContainer = styled.div`
   flex-direction: column;
   gap: 0.6rem;
   padding: 1rem;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
 `;
 
 export const MessageLeft = styled.div`

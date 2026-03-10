@@ -27,6 +27,23 @@ const GlobalStyles = createGlobalStyle`
     color: var(--gray-1000);
     font-family: 'Montserrat';
   }
+
+  // div[vw].enabled {
+  //   left: 1rem !important;
+  //   bottom: 1rem !important;
+  //   right: auto !important;
+  //   top: auto !important;
+  //   transform: none !important;
+  // }
+
+  // div[vw].enabled [vw-access-button] {
+  //   position: fixed !important;
+  //   left: 1.25rem !important;
+  //   bottom: 0.75rem !important;
+  //   transform: scale(0.9) !important;
+  //   transform-origin: bottom left !important;
+  // }
+
 `;
 
 export default GlobalStyles;

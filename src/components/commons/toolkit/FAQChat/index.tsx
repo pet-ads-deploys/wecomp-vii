@@ -33,11 +33,6 @@ export default function FAQChat() {
     setIsOpen((prev) => !prev);
   };
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (chatRef.current && !chatRef.current.contains(event.target as Node)) {
-      setIsOpen(false);
-    }
-  };
 
   const handleClick = (item: { question: string; answer: string }) => {
     setChat((prev) => [...prev, { from: "user", text: item.question }]);
@@ -63,13 +58,6 @@ export default function FAQChat() {
       buttonRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [chat]);
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  });
 
   return (
     <ChatWrapper>

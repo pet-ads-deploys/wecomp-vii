@@ -40,5 +40,21 @@
     <div id="portal-root"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget({
+        rootPath: 'https://vlibras.gov.br/app',
+        avatar: 'joao',
+        position: 'bottom', // Força ele a ficar no final da página
+        buttonClass: 'on-right', // Coloca o botão no lado esquerdo
+      });
+    </script>
   </body>
 </html>
