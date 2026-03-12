@@ -31,7 +31,11 @@ export default function Card({
             <ExpirienceTag label={typeEvent} />
           </TagContainer>
         </ContainerIconTag>
-        <EventImage src={image} draggable={false} />
+        <EventImage 
+          src={image} 
+          alt={`Logo da empresa ${companyName}`} 
+          draggable={false} 
+        />
       </ContainerHeader>
       <Title>{title}</Title>
       <CardHeader companyName={companyName} />

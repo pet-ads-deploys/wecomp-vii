@@ -54,7 +54,7 @@ export default function CardProjeto({
           <ExpirienceTag label={typeEvent} />
           <EventImage
             src={image}
-            alt={"logo " + companyName}
+            alt={"logo da empresa:" + companyName}
             draggable={false}
           />
         </TagContainer>
