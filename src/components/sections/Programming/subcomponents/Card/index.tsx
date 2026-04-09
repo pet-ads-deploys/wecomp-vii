@@ -10,16 +10,12 @@ import { generatedIconEvent } from "../../../../../utils/generatedIconEvent";
 
 import { ProgrammingProps } from "../../types";
 
-import { PaginationProps } from "../CardFooter/types";
-
 export default function Card({
   name,
   image,
   imageDescription,
   bio,
   author,
-  //date,
-  //time,
   link,
   vacancies,
   location,
@@ -27,8 +23,7 @@ export default function Card({
   classification,
   description,
   typeEvent,
-  pagination,
-}: ProgrammingProps & { pagination?: PaginationProps }) {
+}: ProgrammingProps) {
   const { labelButton, cardText, handleChangeCardText } = useToggleCardContent(
     description,
     bio,
@@ -66,7 +61,6 @@ export default function Card({
         labelButton={labelButton}
         handleChangeCardText={handleChangeCardText}
         typeEvent={typeEvent}
-        pagination={pagination} 
       />
     </Container>
   );
