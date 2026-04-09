@@ -4,9 +4,9 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --white-100: #FFFFFF;
     --gray-200: #F4F3EF;
-    --gray-1000: #1a583d;
-    --green-500: #1a583d;
-    --green-700: #78b595;
+    --gray-1000: #000000;
+    --green-500: #2e7594;
+    --green-700: #63a1bc;
   }
 
   * {
@@ -27,22 +27,6 @@ const GlobalStyles = createGlobalStyle`
     color: var(--gray-1000);
     font-family: 'Montserrat';
   }
-
-  // div[vw].enabled {
-  //   left: 1rem !important;
-  //   bottom: 1rem !important;
-  //   right: auto !important;
-  //   top: auto !important;
-  //   transform: none !important;
-  // }
-
-  // div[vw].enabled [vw-access-button] {
-  //   position: fixed !important;
-  //   left: 1.25rem !important;
-  //   bottom: 0.75rem !important;
-  //   transform: scale(0.9) !important;
-  //   transform-origin: bottom left !important;
-  // }
 
 `;
 
