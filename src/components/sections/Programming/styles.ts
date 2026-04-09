@@ -4,12 +4,14 @@ import { mq } from "../../../utils/responsive/breakpoints";
 const responsiveWidth = css`
 
   width: 100%;
+  max-width: 320px;
+  min-width: 320px;
   box-sizing: border-box;
 
   ${mq({
-    width: ["380px", "320px", "320px", "320px", "380px"],
+    width: ["100%", "100%", "100%", "100%", "320px"],
   })}
-  max-width: 380px;
+  
 `;
 
 const BaseButton = css`
@@ -89,34 +91,39 @@ export const ContentWrapper = styled.div`
   gap: 2.5rem;
   width: 100%;
   max-width: 1100px;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: center; 
+  align-items: center;
 
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     align-items: center;
   }
+
 `;
 
 export const TimeTabs = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 200px;
-  justify-content: center;
-  
-  @media (max-width: 900px) {
-    width: 100%;
-    flex-direction: row;
-    overflow-x: auto;
-    padding-bottom: 0.6rem;
+  width: 100%;
+  max-width: 200px; 
+  align-items: center; 
+  justify-content: flex-start;
+  flex-shrink: 0;
+  margin-left: 0.75rem;
+
+  @media (max-width: 1000px) {
+    max-width: 20%;
+    flex-direction: column; 
   }
+
 `;
 
 export const TimeButton = styled.button<{ $active: boolean }>`
   ${BaseButton}
   height: 50px;
-  width: 100%;
+  width: 100%; 
+  
   background: ${({ $active }) => ($active ? "#000" : "#fff")};
   color: ${({ $active }) => ($active ? "#fff" : "#000")};
   box-shadow: ${({ $active }) => ($active ? "none" : "0 4px 10px rgba(0, 0, 0, 0.08)")};
@@ -125,42 +132,83 @@ export const TimeButton = styled.button<{ $active: boolean }>`
     transform: translateY(-2px);
     background: ${({ $active }) => ($active ? "#000" : "#f9f9f9")};
   }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    max-width: 150px;
+    margin-left: 0;
+  }
+
+  @media (max-width: 100px) {
+    max-width: 120px;
+    flex-direction: row; 
+    overflow-x: auto;
+    justify-content: center;
+  }
 `;
 
 export const EventsList = styled.main`
   display: flex;
   flex-direction: column;
+  flex: 1;
   width: 100%;
   align-items: center;
   gap: 1.5rem;
+  justify-content: center;
+  position: relative; 
+
+  @media (max-width: 600px) {
+    ${responsiveWidth}
+  }
+
+  @media (max-width: 900px) {
+    align-items: center;
+    max-width: 100%;
+  }
 `;
 
-export const PaginationContainer = styled.div`
+export const PaginationWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  ${responsiveWidth}
+  gap: 12px;
+  user-select: none;
+
+  @media (min-width: 801px) {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   span {
-    font-weight: bold;
-    font-size: 0.9rem;
-    color: #666;
-    min-width: 65px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #444;
+    min-width: 45px;
     text-align: center;
   }
 
   button {
-    ${BaseButton}
-    background: #fff;
-    border: 1px solid #dcdcdc;
+    background: transparent;
+    border: 1px solid #63a1bc;
+    color: #63a1bc;
     border-radius: 6px;
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
 
     &:hover:not(:disabled) {
-      background: #f5f5f5;
+      background: #63a1bc;
+      color: white;
+    }
+
+    &:disabled {
+      border-color: #ccc;
+      color: #ccc;
+      cursor: not-allowed;
     }
   }
 `;
@@ -168,7 +216,8 @@ export const PaginationContainer = styled.div`
 export const DropdownContainer = styled.div`
   position: relative;
   z-index: 5;
-  margin: 2rem 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   ${responsiveWidth}
 `;
 

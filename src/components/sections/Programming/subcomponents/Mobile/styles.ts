@@ -11,13 +11,15 @@ export const Container = styled.div`
   background-color: var(--white-100);
   border-radius: 1rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  
   padding: 1.5rem;
   justify-content: space-between;
   gap: 1rem;
   box-sizing: border-box;
   
-  max-width: 380px;
+  width: 100%; 
+  max-width: 420px;
+
+  height: 450px;
 `;
 
 export const ContainerHead = styled.div`
@@ -116,8 +118,8 @@ export const ContainerMain = styled.div`
   color: #000;
   margin-top: 0.5rem;
 
-  flex: 1;
-  max-height: 180px; 
+  flex: none;
+  max-height: 140px; 
   overflow-y: auto;
   padding-right: 4px;
 

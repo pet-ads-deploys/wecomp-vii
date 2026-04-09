@@ -29,7 +29,7 @@ import {
   DropdownItem,
   IconArrow,
   DayDivider,
-  PaginationContainer
+  PaginationWrapper
 } from "./styles";
 
 export default function Programming() {
@@ -69,16 +69,14 @@ export default function Programming() {
   }, [availableTimesOfDay, selectedTime]);
 
   const formatLabel = (date: string, time: string) => {
-    const dayNumeric = date.split(" ")[0];
+    const dayNumeric = date?.split(" ")[0] || "";
     return `${dayNumeric}/10 | ${time}`;
   };
 
   const groupedMobileOptions = useMemo(() => {
     const groups: Record<string, string[]> = {};
     data.forEach(event => {
-      if (!groups[event.date]) {
-        groups[event.date] = [];
-      }
+      if (!groups[event.date]) groups[event.date] = [];
       if (!groups[event.date].includes(event.time)) {
         groups[event.date].push(event.time);
       }
@@ -136,24 +134,20 @@ export default function Programming() {
                     {Object.entries(groupedMobileOptions).map(([day, times]) => (
                       <div key={day}>
                         <DayDivider>{day}</DayDivider>
-                        
-                        {times.map((time) => {
-                          const isActive = selectedDay === day && currentSelectedTime === time;
-                          return (
-                            <DropdownItem 
-                              key={`${day}-${time}`}
-                              $active={isActive}
-                              onClick={() => {
-                                setSelectedDay(day);
-                                setSelectedTime(time);
-                                setEventIndex(0);
-                                setIsDropdownOpen(false);
-                              }}
-                            >
-                              {time}
-                            </DropdownItem>
-                          );
-                        })}
+                        {times.map((time) => (
+                          <DropdownItem 
+                            key={`${day}-${time}`}
+                            $active={selectedDay === day && currentSelectedTime === time}
+                            onClick={() => {
+                              setSelectedDay(day);
+                              setSelectedTime(time);
+                              setEventIndex(0);
+                              setIsDropdownOpen(false);
+                            }}
+                          >
+                            {time}
+                          </DropdownItem>
+                        ))}
                       </div>
                     ))}
                   </DropdownList>
@@ -181,49 +175,43 @@ export default function Programming() {
 
               <EventsList>
                 {currentEvent && (
-                  shouldUseMobileLayout ? (
-                    <>
+                  <>
+                    {shouldUseMobileLayout ? (
                       <CardProjeto 
                         key={`${currentEvent.name}-${eventIndex}`} 
                         {...currentEvent}
                       />
-                      
-                      {filteredEvents.length > 1 && (
-                        <PaginationContainer>
-                          <button 
-                            type="button"
-                            disabled={eventIndex === 0} 
-                            onClick={() => setEventIndex(i => Math.max(i - 1, 0))}
-                          >
-                            <FaChevronLeft size={12} />
-                          </button>
-                          
-                          <span>
-                            {eventIndex + 1} de {filteredEvents.length}
-                          </span>
-                          
-                          <button 
-                            type="button"
-                            disabled={eventIndex === filteredEvents.length - 1} 
-                            onClick={() => setEventIndex(i => Math.min(i + 1, filteredEvents.length - 1))}
-                          >
-                            <FaChevronRight size={12} />
-                          </button>
-                        </PaginationContainer>
-                      )}
-                    </>
-                  ) : (
-                    <Card
-                      key={`${currentEvent.name}-${eventIndex}`}
-                      {...currentEvent}
-                      pagination={{
-                        current: eventIndex + 1,
-                        total: filteredEvents.length,
-                        onNext: () => setEventIndex(i => Math.min(i + 1, filteredEvents.length - 1)),
-                        onPrev: () => setEventIndex(i => Math.max(i - 1, 0))
-                      }}
-                    />
-                  )
+                    ) : (
+                      <Card
+                        key={`${currentEvent.name}-${eventIndex}`}
+                        {...currentEvent}
+                      />
+                    )}
+
+                    {filteredEvents.length > 1 && (
+                      <PaginationWrapper>
+                        <button 
+                          type="button"
+                          disabled={eventIndex === 0} 
+                          onClick={() => setEventIndex(i => Math.max(i - 1, 0))}
+                        >
+                          <FaChevronLeft size={12} />
+                        </button>
+                        
+                        <span>
+                          {eventIndex + 1} de {filteredEvents.length}
+                        </span>
+                        
+                        <button 
+                          type="button"
+                          disabled={eventIndex === filteredEvents.length - 1} 
+                          onClick={() => setEventIndex(i => Math.min(i + 1, filteredEvents.length - 1))}
+                        >
+                          <FaChevronRight size={12} />
+                        </button>
+                      </PaginationWrapper>
+                    )}
+                  </>
                 )}
               </EventsList>
             </ContentWrapper>

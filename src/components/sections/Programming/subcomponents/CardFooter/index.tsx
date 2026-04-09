@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import RedirectButton from "../../../../commons/toolkit/RedirectButton";
 import LabeledValue from "../../../../commons/toolkit/LabeledValue";
@@ -10,7 +9,6 @@ import {
   Container, 
   ContainerButtons, 
   EventDescriptionButton, 
-  PaginationWrapper
 } from "./styles";
 
 export default function CardFooter({
@@ -20,7 +18,6 @@ export default function CardFooter({
   typeEvent,
   status,
   handleChangeCardText,
-  pagination,
 }: CardFooterProps) {
   const eventsDisablingActionButton = ["TechnicalVisit", "Opening"];
 
@@ -44,28 +41,6 @@ export default function CardFooter({
   return (
     <Container>
       <LabeledValue label="Vagas" value={vacancies} />
-
-        {pagination && pagination.total > 1 && (
-          <PaginationWrapper>
-            <button 
-              type="button"
-              disabled={pagination.current === 1} 
-              onClick={pagination.onPrev}
-            >
-              <FaChevronLeft size={14} />
-            </button>
-            
-            <span>{pagination.current} de {pagination.total}</span>
-            
-            <button 
-              type="button"
-              disabled={pagination.current === pagination.total} 
-              onClick={pagination.onNext}
-            >
-              <FaChevronRight size={14} />
-            </button>
-          </PaginationWrapper>
-        )}
 
       <ContainerButtons>
         {eventsDisablingActionButton.includes(typeEvent) ? null : (
