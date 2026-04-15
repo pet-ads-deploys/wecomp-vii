@@ -6,6 +6,8 @@ export const SoonCardContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+  margin-top: 2%;
+
   width: 100%;
   height: 100%;
 `;
@@ -20,7 +22,7 @@ export const InformationWrapper = styled.div`
 
 export const SoonImage = styled.img<{ isMobile: boolean }>`
   width: 100%;
-  max-width: ${({ isMobile }) => (isMobile ? "12rem" : "15rem")};
+  max-width: ${({ isMobile }) => (isMobile ? "15rem" : "20rem")};
 `;
 
 export const SoonText = styled.span`
