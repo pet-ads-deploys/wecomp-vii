@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Components
@@ -15,13 +15,13 @@ import useIsMobileHeight from "../../../hooks/window/MobileHeight";
 import programmingContent from "../../../assets/content/programming";
 
 // Styles 
-import { 
-  Container, 
-  DaysTabs, 
-  TimeTabs, 
-  ContentWrapper, 
-  TabButton, 
-  TimeButton, 
+import {
+  Container,
+  DaysTabs,
+  TimeTabs,
+  ContentWrapper,
+  TabButton,
+  TimeButton,
   EventsList,
   DropdownContainer,
   DropdownHeader,
@@ -36,6 +36,7 @@ export default function Programming() {
   const isMobile = useIsMobile();
   const isMobileHeight = useIsMobileHeight();
   const shouldUseMobileLayout = isMobile || isMobileHeight;
+  const activeItemRef = useRef<HTMLDivElement>(null);
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -45,7 +46,7 @@ export default function Programming() {
     time: e.time.trim()
   })), []);
 
-  const days = useMemo(() => 
+  const days = useMemo(() =>
     Array.from(new Set(data.map(event => event.date))).sort(),
     [data]
   );
@@ -53,6 +54,8 @@ export default function Programming() {
   const [selectedDay, setSelectedDay] = useState<string>(days[0] || "");
   const [selectedTime, setSelectedTime] = useState<string>("");
   const [eventIndex, setEventIndex] = useState<number>(0);
+
+  const dropdownListRef = useRef<HTMLDivElement>(null);
 
   const availableTimesOfDay = useMemo(() => {
     if (!selectedDay) return [];
@@ -63,10 +66,24 @@ export default function Programming() {
   }, [data, selectedDay]);
 
   const currentSelectedTime = useMemo(() => {
-    return availableTimesOfDay.includes(selectedTime) 
-      ? selectedTime 
+    return availableTimesOfDay.includes(selectedTime)
+      ? selectedTime
       : availableTimesOfDay[0] || "";
   }, [availableTimesOfDay, selectedTime]);
+
+  useEffect(() => {
+    if (isDropdownOpen && activeItemRef.current && dropdownListRef.current) {
+      const list = dropdownListRef.current;
+      const item = activeItemRef.current;
+
+      const scrollPos = item.offsetTop - list.offsetTop;
+
+      list.scrollTo({
+        top: scrollPos,
+        behavior: "smooth"
+      });
+    }
+  }, [isDropdownOpen]);
 
   const formatLabel = (date: string, time: string) => {
     const dayNumeric = date?.split(" ")[0] || "";
@@ -111,10 +128,10 @@ export default function Programming() {
             {!shouldUseMobileLayout && (
               <DaysTabs>
                 {days.map((day) => (
-                  <TabButton 
-                    key={day} 
+                  <TabButton
+                    key={day}
                     $active={selectedDay === day}
-                    onClick={() => handleDayChange(day)} 
+                    onClick={() => handleDayChange(day)}
                   >
                     {day}
                   </TabButton>
@@ -128,26 +145,30 @@ export default function Programming() {
                   {formatLabel(selectedDay, currentSelectedTime)}
                   <IconArrow $isOpen={isDropdownOpen} />
                 </DropdownHeader>
-                
+
                 {isDropdownOpen && (
-                  <DropdownList>
+                  <DropdownList ref={dropdownListRef}>
                     {Object.entries(groupedMobileOptions).map(([day, times]) => (
                       <div key={day}>
                         <DayDivider>{day}</DayDivider>
-                        {times.map((time) => (
-                          <DropdownItem 
-                            key={`${day}-${time}`}
-                            $active={selectedDay === day && currentSelectedTime === time}
-                            onClick={() => {
-                              setSelectedDay(day);
-                              setSelectedTime(time);
-                              setEventIndex(0);
-                              setIsDropdownOpen(false);
-                            }}
-                          >
-                            {time}
-                          </DropdownItem>
-                        ))}
+                        {times.map((time) => {
+                          const isActive = selectedDay === day && currentSelectedTime === time;
+                          return (
+                            <DropdownItem
+                              key={`${day}-${time}`}
+                              ref={isActive ? activeItemRef : null}
+                              $active={isActive}
+                              onClick={() => {
+                                setSelectedDay(day);
+                                setSelectedTime(time);
+                                setEventIndex(0);
+                                setIsDropdownOpen(false);
+                              }}
+                            >
+                              {time}
+                            </DropdownItem>
+                          );
+                        })}
                       </div>
                     ))}
                   </DropdownList>
@@ -159,12 +180,12 @@ export default function Programming() {
               {!shouldUseMobileLayout && (
                 <TimeTabs>
                   {availableTimesOfDay.map((time) => (
-                    <TimeButton 
-                      key={time} 
-                      $active={currentSelectedTime === time} 
+                    <TimeButton
+                      key={time}
+                      $active={currentSelectedTime === time}
                       onClick={() => {
                         setSelectedTime(time);
-                        setEventIndex(0); 
+                        setEventIndex(0);
                       }}
                     >
                       {time}
@@ -177,8 +198,8 @@ export default function Programming() {
                 {currentEvent && (
                   <>
                     {shouldUseMobileLayout ? (
-                      <CardProjeto 
-                        key={`${currentEvent.name}-${eventIndex}`} 
+                      <CardProjeto
+                        key={`${currentEvent.name}-${eventIndex}`}
                         {...currentEvent}
                       />
                     ) : (
@@ -190,21 +211,21 @@ export default function Programming() {
 
                     {filteredEvents.length > 1 && (
                       <PaginationWrapper>
-                        <button 
+                        <button
                           type="button"
-                          disabled={eventIndex === 0} 
+                          disabled={eventIndex === 0}
                           onClick={() => setEventIndex(i => Math.max(i - 1, 0))}
                         >
                           <FaChevronLeft size={12} />
                         </button>
-                        
+
                         <span>
                           {eventIndex + 1} de {filteredEvents.length}
                         </span>
-                        
-                        <button 
+
+                        <button
                           type="button"
-                          disabled={eventIndex === filteredEvents.length - 1} 
+                          disabled={eventIndex === filteredEvents.length - 1}
                           onClick={() => setEventIndex(i => Math.min(i + 1, filteredEvents.length - 1))}
                         >
                           <FaChevronRight size={12} />
