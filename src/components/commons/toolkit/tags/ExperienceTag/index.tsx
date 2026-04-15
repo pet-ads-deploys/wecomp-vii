@@ -7,17 +7,17 @@ export default function ExpirienceTag({ label }: OfferModalityProps) {
     const options = {
       Trainee: {
         backgroundColor: "#DCF7E4",
-        textColor: "#1A800A",
+        textColor: "#146907",
         translateText: "Trainee",
       },
       Internship: {
         backgroundColor: "#E3F0FF",
-        textColor: "#367AF5",
+        textColor: "#2A61C6",
         translateText: "Estágio",
       },
       Hiring: {
         backgroundColor: "#FCF2D6",
-        textColor: "#be8b00",
+        textColor: "#856204",
         translateText: "Contratação",
       },
     };

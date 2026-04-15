@@ -7,17 +7,17 @@ export default function AvailabilityTag({ label }: AvailabilityProps) {
     const options = {
       Available: {
         backgroundColor: "#DCF7E4",
-        textColor: "#1A800A",
+        textColor: "#146907",
         translateText: "Disponível",
       },
       LastVacancies: {
         backgroundColor: "#FCF2D6",
-        textColor: "#EAB00D",
+        textColor: "#856204",
         translateText: "Últimas vagas",
       },
       Closed: {
         backgroundColor: "#F2E6E6",
-        textColor: "#FF6158",
+        textColor: "#AA3E38",
         translateText: "Esgotado",
       },
     };

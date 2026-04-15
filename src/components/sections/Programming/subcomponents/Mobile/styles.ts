@@ -51,6 +51,12 @@ export const EventTitle = styled.div<{ isOpen: boolean }>`
   color: #000;
   line-height: 1.2;
   font-size: 0.95rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.4em;
 `;
 
 export const EventDetails = styled.div<{ isOpen: boolean }>`
@@ -114,14 +120,16 @@ export const ContainerMain = styled.div`
   width: 100%;
   text-align: justify;
   font-size: 0.85rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #000;
   margin-top: 0.5rem;
 
-  flex: none;
-  max-height: 140px; 
+  flex: 1;
+  max-height: 160px; 
   overflow-y: auto;
   padding-right: 4px;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
 
   &::-webkit-scrollbar {
     width: 4px;

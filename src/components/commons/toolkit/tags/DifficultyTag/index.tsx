@@ -7,17 +7,17 @@ export default function DifficultyTag({ label }: DifficultyEventProps) {
     const options = {
       Free: {
         backgroundColor: "#DCF7E4",
-        textColor: "#1A800A",
+        textColor: "#146907",
         translateText: "Livre",
       },
       Basic: {
         backgroundColor: "#E3F0FF",
-        textColor: "#367AF5",
+        textColor: "#2A61C6",
         translateText: "Básico",
       },
       Intermediary: {
         backgroundColor: "#FCF2D6",
-        textColor: "#EAB00D",
+        textColor: "#856204",
         translateText: "Intermediário",
       },
     };
