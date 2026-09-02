@@ -19,10 +19,10 @@ export const programmingContent: ProgrammingProps[] = [
     date: "22 de setembro",
     time: "19h00 - 21h30",
     link: "",
-    vacancies: 30,
+    vacancies: 160,
     location: "ONOVOLAB",
     description:
-      "A abertura oficial da VII Wecomp acontecerá no ONOVOLAB e contará com a presença de empresas parceiras, uma mesa redonda com o tema 'Dev 2030: Como deverá ser a carreira de tech daqui a cinco anos?' e uma confraternização. Não perca!",
+      "A abertura oficial da VII Wecomp acontecerá no ONOVOLAB e contará com a presença de empresas parceiras. Não perca!",
     typeEvent: "Opening",
     classification: "Free",
     status: "Available",
