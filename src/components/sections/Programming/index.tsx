@@ -62,7 +62,7 @@ export default function Programming() {
     const times = data
       .filter(event => event.date === selectedDay)
       .map(event => event.time);
-    return Array.from(new Set(times)).sort();
+    return Array.from(new Set(times)).sort().reverse();
   }, [data, selectedDay]);
 
   const currentSelectedTime = useMemo(() => {
@@ -98,7 +98,7 @@ export default function Programming() {
         groups[event.date].push(event.time);
       }
     });
-    Object.keys(groups).forEach(day => groups[day].sort());
+    Object.keys(groups).forEach(day => groups[day].sort().reverse());
     return groups;
   }, [data]);
 
