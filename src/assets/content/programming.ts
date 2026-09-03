@@ -8,6 +8,8 @@ import CarlaoPereira from "../images/lecturers/CarlaoPereira.svg";
 import Pet from "../images/PET.svg";
 import JoaoCaires from "../images/lecturers/JoaoCaires.svg";
 import AlineTolentino from "../images/lecturers/AlineTolentino.svg";
+import LucasPaulino from "../images/lecturers/LucasPaulino.svg"; 
+import StepWise from "../images/organizationLogo/StepWiseLogo.svg";
 
 export const programmingContent: ProgrammingProps[] = [
   {
@@ -144,6 +146,40 @@ export const programmingContent: ProgrammingProps[] = [
       "Como garantir a qualidade quando a IA programa e testa? Esse minicurso demonstra na prática a integração de agentes de IA (Claude Code, Playwright MCP, Jira, GitHub CLI) no ciclo de desenvolvimento, mostrando como transformar testes em métricas reais e onde o julgamento humano continua essencial.",
     typeEvent: "Course",
     classification: "Intermediary",
+    status: "Available",
+  },
+  {
+    name: "Do prompt ao ambiente: preparando seu projeto para desenvolver com agentes de IA",
+    image: LucasPaulino,
+    imageDescription: "foto de Lucas Paulino (Multiplica)",
+    bio: "CTO e cofundador da Wonami e líder técnico no Grupo Multiplica, onde lidera o time de desenvolvimento em IA. Atua em TI desde 2011, passando por engenharia de IA, liderança técnica e gestão ágil, com projetos para AME Digital, Alelo, Santander e SwissRe. Graduado em Análise e Desenvolvimento de Sistemas e cursando pós-graduação em Inteligência Artificial e Big Data na USP.",
+    author: "Lucas Paulino",
+    date: "22 de setembro",
+    time: "08h30 - 11h30",
+    link: "",
+    vacancies: 30,
+    location: "IFSP",
+    description:
+      "Usar IA para escrever código é fácil. Fazer isso de forma confiável e barata é outro problema, e ele quase nunca está no prompt: está no harness, o conjunto de arquivos, regras e automações que cerca o modelo. O minicurso cobre os fundamentos do desenvolvimento guiado por agentes (token, janela de contexto, custo, alucinação) e as técnicas em uso hoje: engenharia de contexto, instruções persistentes no padrão aberto AGENTS.md, documentação como memória do projeto, spec-driven development, subagentes, skills, ferramentas via MCP e hooks de verificação automática. A parte prática monta um projeto pequeno do zero: ambiente configurado, repositório versionado no Git e o harness construído passo a passo, comparando o que a IA entrega sem preparo e com preparo. Independente de fornecedor, só ferramentas gratuitas.",
+    typeEvent: "Course",
+    classification: "Basic",
+    status: "Available",
+  },
+  {
+    name: "Do chat ao agente: como estruturar projetos e áreas para trabalhar com IA",
+    image: StepWise,
+    imageDescription: "logo da StepWise",
+    bio: "- Michelangelo R. dos Anjos: Michelangelo é bacharel em Estatística pela UFSCar, Mestre em Ciências: Matemática, Estatística e Computação pela USP e também técnico em Informática. Atua como Advanced Data Science Manager na Stepwise, há mais de 8 anos na empresa, onde lidera a área de Inovação no desenvolvimento de uma plataforma para automação de modelos estatísticos e definição de políticas e regras de decisão. Além disso, conduz projetos de consultoria em ciência de dados, unindo experiência técnica e visão estratégica. - Guilherme Ichibara: Guilherme, Engenheiro de Computação pela USP São Carlos. Atua com back-end e engenharia de dados na Stepwise desde 2021, desenvolvendo APIs e integrações de sistemas internos, visando segurança dos dados. Entusiasta do uso de IA como assistente, mas prezando pela qualidade dos resultados. - Gustavo Contiero: Gustavo Contiero está cursando o 8° semestre do curso Bacharelado em Engenharia de Software no IFSP. Na StepWise, atua como desenvolvedor backend em C#, construindo produtos que envolvem tratamento e interpretação de grandes bases de dados. Se dedica em aprender a utilizar agentes para otimizar a rotina de um desenvolvedor nos dias atuais.  - João Vitor Simplicio: João está cursando Bacharelado em Sistemas de Informação na USP São Carlos. Atua como desenvolvedor de software e engenharia de dados na StepWise, com experiência em desenvolvimento de APIs, front-end e bancos de dados. Entusiasta do uso de IA e agentes com contexto, skills e validação versionados junto do código.",
+    author: "Michelangelo dos Anjos, Guilherme Ichibara, Gustavo Contiero e João Simplicio",
+    date: "23 de setembro",
+    time: "19h00 - 20h20",
+    link: "",
+    vacancies: 110,
+    location: "IFSP",
+    description:
+      "Em pouco mais de um ano, a IA deixou de ser uma conversa em uma janela de chat e passou a executar tarefas longas, acessar sistemas e rodar sem ninguém olhando. A pergunta mudou de lugar. Ela é menos sobre qual modelo usar e mais sobre como organizar contexto, procedimento e permissão para que o resultado seja confiável. Iremos nos aprofundar sobre o que é um agente, o que mudou nos modelos e quais peças sustentam esse tipo de uso: arquivos de contexto como MD's, Skills, memórias, conectores MCP e Plugins. Para cada peça, o que ela resolve, quando é desnecessária e a possibilidade de desenvolvimento interno. No fim, como colocar uma rotina em nuvem ou em cron local, o que isso custa, o que exige revisão humana e os erros mais comuns de quem pula a etapa de organização.",
+    typeEvent: "Talk",
+    classification: "Free",
     status: "Available",
   },
 ];
