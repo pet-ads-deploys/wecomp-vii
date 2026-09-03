@@ -39,7 +39,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C105",
     description:
       "Neste minicurso, você aprenderá os conceitos básicos do Git, capacitando-o a usar essa ferramenta no dia a dia. Também será apresentada uma visão geral do GitHub e como integrá-lo ao Vercel para realizar deploys automáticos de páginas web.",
     typeEvent: "Course",
@@ -56,7 +56,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C209",
     description:
       "Este mini-curso apresentará uma breve história da filosofia do Software Livre e do surgimento do sistema operacional Linux, focando em seguida nos principais comandos para dominar o terminal e executar tarefas com agilidade e eficiência. Desde comandos básicos de navegação até operações mais avançadas, serão exploradas ferramentas essenciais para gestão de arquivos, instalação de programas, gerenciamento de processos, entre outros, de uma forma totalmente prática.",
     typeEvent: "Course",
@@ -73,7 +73,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C104",
     description:
       "Este minicurso apresenta os fundamentos da fabricação aditiva e da impressão 3D de forma prática e acessível. O aluno aprenderá a diferenciar os principais processos de manufatura, conhecerá os tipos de impressoras FDM e as características dos filamentos mais utilizados no mercado (como PLA, ABS e PETG). Além disso, será introduzido ao ecossistema de criação e preparação de peças, passando pela modelagem básica e pelas configurações essenciais nos softwares fatiadores para transformar projetos virtuais em objetos reais.",
     typeEvent: "Course",
@@ -90,7 +90,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C106",
     description:
       "O minicurso apresenta os principais conceitos da programação funcional e discute as razões que tornam esse paradigma relevante no contexto atual do desenvolvimento de software. Serão abordadas ideias como funções puras, imutabilidade, composição de funções e funções de ordem superior, com exemplos simples que ajudem a entender sua aplicação. O curso também mostra como conceitos funcionais aparecem em linguagens e práticas de programação contemporâneas.",
     typeEvent: "Course",
@@ -107,7 +107,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C105",
     description:
       "Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz? Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz?",
     typeEvent: "Course",
@@ -124,7 +124,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C102",
     description:
       "Neste minicurso, vamos partir de um aplicativo Android simples e funcional chamado Descubra, que realiza uma requisição a uma API pública da Wikipédia e apresenta na tela informações sobre um artigo aleatório. A atividade será construída de forma prática e colaborativa. Primeiro, vamos observar como uma API funciona e entender, por meio do Insomnia, quais dados o aplicativo irá consumir. Em seguida, partiremos de um projeto propositalmente simples, concentrado em uma única Activity, e exploraremos junto com os participantes os desafios que surgem quando uma aplicação começa a evoluir. A partir de situações práticas — como a necessidade de manter o estado da aplicação durante uma mudança de configuração, melhorar a organização do código e facilitar sua manutenção — vamos evoluir gradualmente o projeto, discutindo conceitos como ViewModel, gerenciamento de estados, separação de responsabilidades, Repository, interfaces, inversão de dependência, SOLID, entre outros. Também será discutido como uma arquitetura bem definida pode facilitar a evolução do produto. O objetivo não é apresentar uma arquitetura \"pronta\" ou uma receita para todos os aplicativos, mas mostrar, na prática, como problemas reais de um produto podem levar a decisões de arquitetura e como essas decisões ajudam a construir aplicações mais organizadas, testáveis e preparadas para evoluir.",
     typeEvent: "Course",
@@ -141,7 +141,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C102",
     description:
       "Como garantir a qualidade quando a IA programa e testa? Esse minicurso demonstra na prática a integração de agentes de IA (Claude Code, Playwright MCP, Jira, GitHub CLI) no ciclo de desenvolvimento, mostrando como transformar testes em métricas reais e onde o julgamento humano continua essencial.",
     typeEvent: "Course",
@@ -158,7 +158,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "IFSP",
+    location: "C102",
     description:
       "Usar IA para escrever código é fácil. Fazer isso de forma confiável e barata é outro problema, e ele quase nunca está no prompt: está no harness, o conjunto de arquivos, regras e automações que cerca o modelo. O minicurso cobre os fundamentos do desenvolvimento guiado por agentes (token, janela de contexto, custo, alucinação) e as técnicas em uso hoje: engenharia de contexto, instruções persistentes no padrão aberto AGENTS.md, documentação como memória do projeto, spec-driven development, subagentes, skills, ferramentas via MCP e hooks de verificação automática. A parte prática monta um projeto pequeno do zero: ambiente configurado, repositório versionado no Git e o harness construído passo a passo, comparando o que a IA entrega sem preparo e com preparo. Independente de fornecedor, só ferramentas gratuitas.",
     typeEvent: "Course",
@@ -175,7 +175,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "19h00 - 20h20",
     link: "",
     vacancies: 110,
-    location: "IFSP",
+    location: "C103",
     description:
       "Em pouco mais de um ano, a IA deixou de ser uma conversa em uma janela de chat e passou a executar tarefas longas, acessar sistemas e rodar sem ninguém olhando. A pergunta mudou de lugar. Ela é menos sobre qual modelo usar e mais sobre como organizar contexto, procedimento e permissão para que o resultado seja confiável. Iremos nos aprofundar sobre o que é um agente, o que mudou nos modelos e quais peças sustentam esse tipo de uso: arquivos de contexto como MD's, Skills, memórias, conectores MCP e Plugins. Para cada peça, o que ela resolve, quando é desnecessária e a possibilidade de desenvolvimento interno. No fim, como colocar uma rotina em nuvem ou em cron local, o que isso custa, o que exige revisão humana e os erros mais comuns de quem pula a etapa de organização.",
     typeEvent: "Talk",
