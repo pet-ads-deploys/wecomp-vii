@@ -18,6 +18,7 @@ export default function CardFooter({
   typeEvent,
   status,
   handleChangeCardText,
+  bio
 }: CardFooterProps) {
   const eventsDisablingActionButton = ["TechnicalVisit", "Opening"];
 
@@ -43,7 +44,7 @@ export default function CardFooter({
       <LabeledValue label="Vagas" value={vacancies} />
 
       <ContainerButtons>
-        {eventsDisablingActionButton.includes(typeEvent) ? null : (
+        {eventsDisablingActionButton.includes(typeEvent) || bio === "" ? null : (
           <EventDescriptionButton onClick={handleChangeCardText}>
             {labelButton}
           </EventDescriptionButton>

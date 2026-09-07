@@ -14,5 +14,6 @@ export interface CardFooterProps {
   status: AvailabilityStatus;
   handleChangeCardText: () => void;
   typeEvent: TypeEventName;
+  bio?: string;
   // pagination?: PaginationProps;
 }
