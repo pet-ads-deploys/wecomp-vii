@@ -9,7 +9,7 @@ import Pet from "../images/PET.svg";
 import JoaoCaires from "../images/lecturers/JoaoCaires.svg";
 import AlineTolentino from "../images/lecturers/AlineTolentino.svg";
 import LucasPaulino from "../images/lecturers/LucasPaulino.svg"; 
-import StepWise from "../images/organizationLogo/StepWiseLogo.svg";
+import StepWise from "../images/organizationLogo/StepWise.svg";
 import Maratona from "../images/MaratonaDeProgramacao.svg";
 import Salespace from "../images/organizationLogo/SalespaceLogo.svg";
 import MoacirPonti from "../images/lecturers/MoacirPonti.svg";

@@ -69,15 +69,16 @@ export const EventDetails = styled.div`
 `;
 
 export const EventImage = styled.img`
-  width: 11%;
+  width: 5.5rem;
+  height: 5.5rem;
+  flex-shrink: 0;
   object-fit: cover; 
   border-radius: 0.5rem; 
-  align-self: center;
+  align-self: flex-start;
   
   @media (max-width: 768px) {
-    width: 11%;
-    height: 11%;
-    
+    width: 4.5rem;
+    height: 4.5rem;
   }
 `;
 
