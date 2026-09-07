@@ -40,16 +40,25 @@ export default function Programming() {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const data = useMemo(() => programmingContent.map(e => ({
-    ...e,
-    date: e.date.trim(),
-    time: e.time.trim()
-  })), []);
+  const data = useMemo(() => {
+    return programmingContent
+      .map(e => ({
+        ...e,
+        date: e.date.trim(),
+        time: e.time.trim()
+      }))
+      .sort((a, b) => {
+        const dayA = parseInt(a.date.replace(/\D/g, "")) || 0;
+        const dayB = parseInt(b.date.replace(/\D/g, "")) || 0;
 
-  const days = useMemo(() =>
-    Array.from(new Set(data.map(event => event.date))).sort(),
-    [data]
-  );
+        if (dayA !== dayB) return dayA - dayB;
+        return b.time.localeCompare(a.time);
+      });
+  }, []);
+
+  const days = useMemo(() => 
+    Array.from(new Set(data.map(event => event.date))), 
+  [data]);
 
   const [selectedDay, setSelectedDay] = useState<string>(days[0] || "");
   const [selectedTime, setSelectedTime] = useState<string>("");
@@ -62,7 +71,7 @@ export default function Programming() {
     const times = data
       .filter(event => event.date === selectedDay)
       .map(event => event.time);
-    return Array.from(new Set(times)).sort().reverse();
+    return Array.from(new Set(times));
   }, [data, selectedDay]);
 
   const currentSelectedTime = useMemo(() => {
@@ -98,7 +107,6 @@ export default function Programming() {
         groups[event.date].push(event.time);
       }
     });
-    Object.keys(groups).forEach(day => groups[day].sort().reverse());
     return groups;
   }, [data]);
 
@@ -148,10 +156,11 @@ export default function Programming() {
 
                 {isDropdownOpen && (
                   <DropdownList ref={dropdownListRef}>
-                    {Object.entries(groupedMobileOptions).map(([day, times]) => (
+                    {/* 5. Iteração direta sobre 'days' para garantir ordem no JSX */}
+                    {days.map((day) => (
                       <div key={day}>
                         <DayDivider>{day}</DayDivider>
-                        {times.map((time) => {
+                        {groupedMobileOptions[day]?.map((time) => {
                           const isActive = selectedDay === day && currentSelectedTime === time;
                           return (
                             <DropdownItem
