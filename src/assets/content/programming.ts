@@ -10,6 +10,9 @@ import JoaoCaires from "../images/lecturers/JoaoCaires.svg";
 import AlineTolentino from "../images/lecturers/AlineTolentino.svg";
 import LucasPaulino from "../images/lecturers/LucasPaulino.svg"; 
 import StepWise from "../images/organizationLogo/StepWiseLogo.svg";
+import Maratona from "../images/MaratonaDeProgramacao.svg";
+import Salespace from "../images/organizationLogo/SalespaceLogo.svg";
+import MoacirPonti from "../images/lecturers/MoacirPonti.svg";
 
 export const programmingContent: ProgrammingProps[] = [
   {
@@ -107,7 +110,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "C105",
+    location: "C102",
     description:
       "Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz? Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz?",
     typeEvent: "Course",
@@ -158,7 +161,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "",
     vacancies: 30,
-    location: "C102",
+    location: "C105",
     description:
       "Usar IA para escrever código é fácil. Fazer isso de forma confiável e barata é outro problema, e ele quase nunca está no prompt: está no harness, o conjunto de arquivos, regras e automações que cerca o modelo. O minicurso cobre os fundamentos do desenvolvimento guiado por agentes (token, janela de contexto, custo, alucinação) e as técnicas em uso hoje: engenharia de contexto, instruções persistentes no padrão aberto AGENTS.md, documentação como memória do projeto, spec-driven development, subagentes, skills, ferramentas via MCP e hooks de verificação automática. A parte prática monta um projeto pequeno do zero: ambiente configurado, repositório versionado no Git e o harness construído passo a passo, comparando o que a IA entrega sem preparo e com preparo. Independente de fornecedor, só ferramentas gratuitas.",
     typeEvent: "Course",
@@ -178,6 +181,57 @@ export const programmingContent: ProgrammingProps[] = [
     location: "C103",
     description:
       "Em pouco mais de um ano, a IA deixou de ser uma conversa em uma janela de chat e passou a executar tarefas longas, acessar sistemas e rodar sem ninguém olhando. A pergunta mudou de lugar. Ela é menos sobre qual modelo usar e mais sobre como organizar contexto, procedimento e permissão para que o resultado seja confiável. Iremos nos aprofundar sobre o que é um agente, o que mudou nos modelos e quais peças sustentam esse tipo de uso: arquivos de contexto como MD's, Skills, memórias, conectores MCP e Plugins. Para cada peça, o que ela resolve, quando é desnecessária e a possibilidade de desenvolvimento interno. No fim, como colocar uma rotina em nuvem ou em cron local, o que isso custa, o que exige revisão humana e os erros mais comuns de quem pula a etapa de organização.",
+    typeEvent: "Talk",
+    classification: "Free",
+    status: "Available",
+  },
+  {
+    name: "Maratona Atlética de Programação",
+    image: Maratona,
+    imageDescription: "logo da Maratona Atlética de Programação",
+    bio: "",
+    author: "AAA IFSP",
+    date: "24 de setembro",
+    time: "14h00 - 17h00",
+    link: "",
+    vacancies: 20,
+    location: "C105",
+    description:
+      "A Maratona de Programação, realizada pela Atlética durante a WECOMP, tem como objetivo estimular o trabalho em equipe, o pensamento lógico e a capacidade de resolver problemas de forma rápida e eficiente. As equipes deverão ser formadas por três integrantes e possuir um nome. A competição terá duração de três horas, durante as quais os participantes deverão solucionar uma série de problemas de programação. Vence a equipe que resolver o maior número de problemas no menor tempo possível.",
+    typeEvent: "Course",
+    classification: "Free",
+    status: "Available",
+  },
+  {
+    name: "O lado B de empreender: o que acontece antes de dar certo?",
+    image: Salespace,
+    imageDescription: "logo da Salespace",
+    bio: "Em 2017, Gustavo Kobayashi ingressou no curso de Ciência da Computação da USP de São Carlos e, no segundo ano, decidiu trocar a certeza da faculdade pela incerteza de empreender. Sete anos depois de co-fundar sua primeira empresa, decidiu que era hora de recomeçar: dessa vez, com o desafio de construir um produto próprio. Foi esse novo começo que deu origem à Salespace.",
+    author: "Gustavo Kobayashi",
+    date: "23 de setembro",
+    time: "20h40 - 22h00",
+    link: "",
+    vacancies: 110,
+    location: "C103",
+    description:
+      "Nem toda decisão vem acompanhada de certeza. Nesta conversa, Gustavo compartilha experiências de sua trajetória como empreendedor e os aprendizados que acumulou ao criar, conduzir e recomeçar um negócio. Após uma breve apresentação de sua trajetória, ele abre espaço para uma troca com o público sobre as escolhas, os erros, as incertezas e os aprendizados que fazem parte do caminho — especialmente aqueles que acontecem antes de uma empresa dar certo.",
+    typeEvent: "Talk",
+    classification: "Free",
+    status: "Available",
+  },
+  {
+    name: "Tudo virou IA: e agora, devo fazer pós-graduação?",
+    image: MoacirPonti,
+    imageDescription: "foto de Moacir Ponti",
+    bio: "Moacir A. Ponti é um especialista em Inteligência Artificial e Machine Learning, liderando estratégia e pesquisa em modelos fundacionais, agentes de IA e machine learning em escala no Mercado Livre, além de atuar como professor associado de Ciência da Computação na USP (ICMC). Autor de livro na área de Machine Learning, premiado pela Google e reconhecido entre os 2% de cientistas mais influentes do mundo, ajuda quem está começando a enxergar a IA como um caminho concreto, na academia e no mercado.",
+    author: "Moacir Ponti (Mercado Livre | ICMC/USP)",
+    date: "24 de setembro",
+    time: "20h40 - 22h00",
+    link: "",
+    vacancies: 110,
+    location: "C103",
+    description:
+      "Todo mundo fala de IA, mas poucos param para enxergar o mapa completo: a pesquisa em Computação vai muito além do hype, e entender suas grandes áreas é o primeiro passo para escolher um caminho na academia ou no mercado. Nesta palestra, percorro as principais áreas de pesquisa em Computação e o que o mercado realmente procura hoje, com a Inteligência Artificial como o fio condutor do momento. Respondo também às perguntas que mais escuto: é possível fazer mestrado trabalhando? O doutorado vale para conseguir um emprego melhor? A partir da minha própria trajetória, mostro como a pesquisa acadêmica e a pesquisa aplicada se conectam na prática. ",
     typeEvent: "Talk",
     classification: "Free",
     status: "Available",
