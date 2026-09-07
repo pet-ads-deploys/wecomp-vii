@@ -96,7 +96,7 @@ export default function Programming() {
 
   const formatLabel = (date: string, time: string) => {
     const dayNumeric = date?.split(" ")[0] || "";
-    return `${dayNumeric}/10 | ${time}`;
+    return `${dayNumeric}/09 | ${time}`;
   };
 
   const groupedMobileOptions = useMemo(() => {
