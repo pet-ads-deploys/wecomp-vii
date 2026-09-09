@@ -13,6 +13,7 @@ import StepWise from "../images/organizationLogo/StepWise.svg";
 import Maratona from "../images/MaratonaDeProgramacao.svg";
 import Salespace from "../images/organizationLogo/SalespaceLogo.svg";
 import MoacirPonti from "../images/lecturers/MoacirPonti.svg";
+import Marlabs from "../images/organizationLogo/MarlabsLogo.svg";
 
 export const programmingContent: ProgrammingProps[] = [
   {
@@ -232,6 +233,23 @@ export const programmingContent: ProgrammingProps[] = [
     location: "C103",
     description:
       "Todo mundo fala de IA, mas poucos param para enxergar o mapa completo: a pesquisa em Computação vai muito além do hype, e entender suas grandes áreas é o primeiro passo para escolher um caminho na academia ou no mercado. Nesta palestra, percorro as principais áreas de pesquisa em Computação e o que o mercado realmente procura hoje, com a Inteligência Artificial como o fio condutor do momento. Respondo também às perguntas que mais escuto: é possível fazer mestrado trabalhando? O doutorado vale para conseguir um emprego melhor? A partir da minha própria trajetória, mostro como a pesquisa acadêmica e a pesquisa aplicada se conectam na prática. ",
+    typeEvent: "Talk",
+    classification: "Free",
+    status: "Available",
+  },
+  {
+    name: "O Fator Humano na Era da IA: Habilidades e conhecimentos para se preparar para o futuro e alguns cases do presente!",
+    image: Marlabs,
+    imageDescription: "logo da Marlabs",
+    bio: "Leonardo Tadashi Miyake é Vice Diretor de TI e profissional de tecnologia com mais de 15 anos de experiência em desenvolvimento de software, qualidade, testes e gestão de entregas. Possui MBA em Big Data & Inteligência Artificial e graduação em Ciência da Computação pela Universidade de São Paulo (USP). Ao longo da carreira atuou como Desenvolvedor Full Stack, QA, Líder Técnico e Gestor de Delivery, liderando equipes e iniciativas de transformação digital em clientes nacionais e internacionais. Possui certificação Large Scale Scrum (LeSS) e foi bicampeão do IEEE International Contest on Software Testing. Atualmente atua na condução de equipes de engenharia, qualidade e iniciativas envolvendo Inteligência Artificial aplicada ao desenvolvimento de software.",
+    author: "Leonardo Tadashi Miyake",
+    date: "24 de setembro",
+    time: "19h00 - 20h20",
+    link: "",
+    vacancies: 110,
+    location: "C103",
+    description:
+      "A Inteligência Artificial já é uma realidade no dia a dia corporativo, automatizando processos e redefinindo a forma como trabalhamos e até como criamos software. Mas qual é o papel do profissional humano nesse novo ecossistema? Esta palestra explorará as competências fundamentais para esse cenário, desde a construção de uma base técnica sólida até a resolução de problemas complexos, tomada de decisão e liderança. Compartilhando lições aprendidas ao escalar plataformas e gerenciar projetos internacionais de TI, a conversa mostrará como transformar a instabilidade do setor em oportunidade de inovação. Encerrando o painel, a equipe de RH compartilhará as perspectivas e o perfil profissional buscado pela nossa empresa (e pelo mercado de forma geral).",
     typeEvent: "Talk",
     classification: "Free",
     status: "Available",
