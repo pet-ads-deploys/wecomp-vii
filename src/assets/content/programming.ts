@@ -15,6 +15,7 @@ import Salespace from "../images/organizationLogo/SalespaceLogo.svg";
 import MoacirPonti from "../images/lecturers/MoacirPonti.svg";
 import Marlabs from "../images/organizationLogo/MarlabsLogo.svg";
 import CSD from "../images/organizationLogo/CsdLogo.svg";
+import MarianaNastri from "../images/lecturers/MarianaNastri.svg";
 
 export const programmingContent: ProgrammingProps[] = [
   {
@@ -270,6 +271,23 @@ export const programmingContent: ProgrammingProps[] = [
       "Vulnerabilidade não é sinônimo de risco, e uma mesma falha pode ter prioridades diferentes dependendo do contexto. Este minicurso apresenta os principais conceitos e referências para a gestão de vulnerabilidades, explorando CVE, CWE, CVSS, EPSS, KEV e SSVC e discutindo o que cada um responde — e o que não responde. Também será abordado o ciclo de gestão de vulnerabilidades, da identificação à priorização, tratamento e registro das decisões, incluindo situações em que não corrigir uma vulnerabilidade pode ser uma decisão técnica válida.",
     typeEvent: "Course",
     classification: "Basic",
+    status: "Available",
+  },
+  {
+    name: "Sua carreira começa agora: como se preparar para o mercado de trabalho",
+    image: MarianaNastri,
+    imageDescription: "foto de Mariana Nastri",
+    bio: "Mariana Nastri é Psicóloga, atua há 15 anos em programas de recrutamento & seleção e orientação de carreira. Recebeu Menção Honrosa 2 vezes pelo Centro Brasileiro de Segurança e Saúde Industrial com trabalhos relativos a ações socioeducativas no ambiente organizacional. É co-fundadora da Voc Talentos, Consultoria de Orientação de Carreira e fundadora da Recruitme consultoria que desenvolve processos seletivos para empresas em todo o Brasil.",
+    author: "Mariana Nastri",
+    date: "22 de setembro",
+    time: "08h30 - 11h30",
+    link: "https://forms.gle/qf8RisNo3owZAW4k9",
+    vacancies: 30,
+    location: "C106",
+    description:
+      "Aprenda, na prática, como fortalecer sua empregabilidade desenvolvendo um posicionamento profissional estratégico, utilizando o currículo e  LinkedIn de forma intencional e ampliando sua capacidade de acessar e conquistar novas oportunidades profissionais.",
+    typeEvent: "Course",
+    classification: "Free",
     status: "Available",
   },
 ];
