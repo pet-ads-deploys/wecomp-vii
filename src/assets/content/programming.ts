@@ -42,7 +42,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "PET/ADS/IFSP",
     date: "24 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/56EZjt2fKXRdPtje6",
     vacancies: 30,
     location: "C105",
     description:
@@ -59,7 +59,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Carlos Pereira (Carlão)",
     date: "23 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/5QrDUHNZ3oE82AhA7",
     vacancies: 30,
     location: "C209",
     description:
@@ -76,7 +76,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Pedro Northon Nobile",
     date: "23 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/EdbDxt311q88rZ76A",
     vacancies: 30,
     location: "C104",
     description:
@@ -93,7 +93,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Adenilso da Silva Simão",
     date: "24 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/XbARfkwQrfnsAC1FA",
     vacancies: 30,
     location: "C106",
     description:
@@ -110,7 +110,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Caio Bicudo Duran",
     date: "22 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/3v2kEza9y4cCx4pX9",
     vacancies: 30,
     location: "C102",
     description:
@@ -127,7 +127,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Aline Tolentino",
     date: "23 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/65yRiyHqGTHmTSf6A",
     vacancies: 30,
     location: "C102",
     description:
@@ -144,7 +144,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "João Vitor de Caires",
     date: "24 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/Mugat1GgGEfmSQkt7",
     vacancies: 30,
     location: "C102",
     description:
@@ -161,7 +161,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Lucas Paulino",
     date: "22 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/X4cwspj5ePVGNpK18",
     vacancies: 30,
     location: "C105",
     description:
@@ -178,7 +178,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Michelangelo dos Anjos, Guilherme Ichibara, Gustavo Contiero e João Simplicio",
     date: "23 de setembro",
     time: "19h00 - 20h20",
-    link: "",
+    link: "https://forms.gle/3wDm41UPtaLjMEMk9",
     vacancies: 110,
     location: "C103",
     description:
@@ -195,7 +195,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "AAA IFSP",
     date: "24 de setembro",
     time: "14h00 - 17h00",
-    link: "",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfaV9bCOMtpaJmhYm85RtAVwRm7CP-BXvgx2QUoCcEYRgQKnQ/viewform?usp=publish-editor",
     vacancies: 20,
     location: "C105",
     description:
@@ -212,7 +212,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Gustavo Kobayashi",
     date: "23 de setembro",
     time: "20h40 - 22h00",
-    link: "",
+    link: "https://forms.gle/3wDm41UPtaLjMEMk9",
     vacancies: 110,
     location: "C103",
     description:
@@ -229,7 +229,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Moacir Ponti (Mercado Livre | ICMC/USP)",
     date: "24 de setembro",
     time: "20h40 - 22h00",
-    link: "",
+    link: "https://forms.gle/nwXtCQPLkPVKTb4p8",
     vacancies: 110,
     location: "C103",
     description:
@@ -246,7 +246,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Leonardo Tadashi Miyake",
     date: "24 de setembro",
     time: "19h00 - 20h20",
-    link: "",
+    link: "https://forms.gle/nwXtCQPLkPVKTb4p8",
     vacancies: 110,
     location: "C103",
     description:
@@ -263,7 +263,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "Equipe CSD",
     date: "22 de setembro",
     time: "08h30 - 11h30",
-    link: "",
+    link: "https://forms.gle/q5Cj49fYvZL8fkkg8",
     vacancies: 30,
     location: "C209",
     description:

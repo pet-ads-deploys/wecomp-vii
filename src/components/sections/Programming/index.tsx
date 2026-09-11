@@ -156,7 +156,6 @@ export default function Programming() {
 
                 {isDropdownOpen && (
                   <DropdownList ref={dropdownListRef}>
-                    {/* 5. Iteração direta sobre 'days' para garantir ordem no JSX */}
                     {days.map((day) => (
                       <div key={day}>
                         <DayDivider>{day}</DayDivider>
