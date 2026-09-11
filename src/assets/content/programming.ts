@@ -14,6 +14,7 @@ import Maratona from "../images/MaratonaDeProgramacao.svg";
 import Salespace from "../images/organizationLogo/SalespaceLogo.svg";
 import MoacirPonti from "../images/lecturers/MoacirPonti.svg";
 import Marlabs from "../images/organizationLogo/MarlabsLogo.svg";
+import CSD from "../images/organizationLogo/CsdLogo.svg";
 
 export const programmingContent: ProgrammingProps[] = [
   {
@@ -252,6 +253,23 @@ export const programmingContent: ProgrammingProps[] = [
       "A Inteligência Artificial já é uma realidade no dia a dia corporativo, automatizando processos e redefinindo a forma como trabalhamos e até como criamos software. Mas qual é o papel do profissional humano nesse novo ecossistema? Esta palestra explorará as competências fundamentais para esse cenário, desde a construção de uma base técnica sólida até a resolução de problemas complexos, tomada de decisão e liderança. Compartilhando lições aprendidas ao escalar plataformas e gerenciar projetos internacionais de TI, a conversa mostrará como transformar a instabilidade do setor em oportunidade de inovação. Encerrando o painel, a equipe de RH compartilhará as perspectivas e o perfil profissional buscado pela nossa empresa (e pelo mercado de forma geral).",
     typeEvent: "Talk",
     classification: "Free",
+    status: "Available",
+  },
+  {
+    name: "Introdução à Gestão de Vulnerabilidades de Segurança",
+    image: CSD,
+    imageDescription: "logo da CSD",
+    bio: "",
+    author: "Equipe CSD",
+    date: "22 de setembro",
+    time: "08h30 - 11h30",
+    link: "",
+    vacancies: 30,
+    location: "C209",
+    description:
+      "Vulnerabilidade não é sinônimo de risco, e uma mesma falha pode ter prioridades diferentes dependendo do contexto. Este minicurso apresenta os principais conceitos e referências para a gestão de vulnerabilidades, explorando CVE, CWE, CVSS, EPSS, KEV e SSVC e discutindo o que cada um responde — e o que não responde. Também será abordado o ciclo de gestão de vulnerabilidades, da identificação à priorização, tratamento e registro das decisões, incluindo situações em que não corrigir uma vulnerabilidade pode ser uma decisão técnica válida.",
+    typeEvent: "Course",
+    classification: "Basic",
     status: "Available",
   },
 ];
