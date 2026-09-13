@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useState, useEffect } from "react";
 import useToggleCardContent from "../../../../../hooks/toggle/useToggleCardContent";
 import RedirectButton from "../../../../commons/toolkit/RedirectButton";
 import AvailabilityTag from "../../../../commons/toolkit/tags/AvailabilityTag";
@@ -58,14 +58,24 @@ export default function CardProjeto({
     "Ver biografia"
   );
 
-  const isShowSubscriveButton = useMemo(() => {
-    if (!link) return false;
-    const blockedStatus = ["closed", "esgotado", "encerrado"];
-    const currentStatus = status?.toLowerCase().trim();
-    return !blockedStatus.includes(currentStatus);
-  }, [link, status]);
-
   const eventsDisablingActionButton = ["TechnicalVisit", "Opening"];
+
+  const cutoffDate = new Date("2026-09-14T00:00:00-03:00");
+  const [isAfterCutoff, setIsAfterCutoff] = useState(new Date() >= cutoffDate);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date();
+      if (now >= cutoffDate) {
+        setIsAfterCutoff(true);
+        clearInterval(interval);
+      }
+    }, 1000 * 30);
+
+    return () => clearInterval(interval);
+  });
+
+  const isShowSubscriveButton = isAfterCutoff && link && status != "Closed";
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
