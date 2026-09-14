@@ -16,6 +16,7 @@ import MoacirPonti from "../images/lecturers/MoacirPonti.svg";
 import Marlabs from "../images/organizationLogo/MarlabsLogo.svg";
 import CSD from "../images/organizationLogo/CsdLogo.svg";
 import MarianaNastri from "../images/lecturers/MarianaNastri.svg";
+import TrofeuTruco from "../images/trofeuTruco.svg"
 
 export const programmingContent: ProgrammingProps[] = [
   {
@@ -287,6 +288,23 @@ export const programmingContent: ProgrammingProps[] = [
     description:
       "Aprenda, na prática, como fortalecer sua empregabilidade desenvolvendo um posicionamento profissional estratégico, utilizando o currículo e  LinkedIn de forma intencional e ampliando sua capacidade de acessar e conquistar novas oportunidades profissionais.",
     typeEvent: "Course",
+    classification: "Free",
+    status: "Available",
+  },
+  {
+    name: "Campeonato de Truco",
+    image: TrofeuTruco,
+    imageDescription: "foto do trofeu de truco",
+    bio: "",
+    author: "PET/ADS/IFSP",
+    date: "23 de setembro",
+    time: "14h00 - 17h30",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSea0Z14HdLYHCGLE5Jy7P-baQHuHYbwXUuoaO-IWp55VoB3ow/viewform",
+    vacancies: 32,
+    location: "Quadra do IFSP – Campus São Carlos",
+    description:
+      "O campeonato será disputado no formato de duplas, com limite de 16 duplas (32 participantes). A participação será destinada exclusivamente a alunos maiores de 18 anos da instituição. O jogo será disputado no estilo Truco Paulista, seguindo as regras definidas pela organização.",
+    typeEvent: "Talk",
     classification: "Free",
     status: "Available",
   },
