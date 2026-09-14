@@ -45,7 +45,7 @@ export const programmingContent: ProgrammingProps[] = [
     time: "08h30 - 11h30",
     link: "https://forms.gle/56EZjt2fKXRdPtje6",
     vacancies: 30,
-    location: "C105",
+    location: "C107",
     description:
       "Neste minicurso, você aprenderá os conceitos básicos do Git, capacitando-o a usar essa ferramenta no dia a dia. Também será apresentada uma visão geral do GitHub e como integrá-lo ao Vercel para realizar deploys automáticos de páginas web.",
     typeEvent: "Course",
