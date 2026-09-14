@@ -26,7 +26,7 @@ export const programmingContent: ProgrammingProps[] = [
     author: "",
     date: "22 de setembro",
     time: "19h00 - 21h30",
-    link: "",
+    link: "https://www.sympla.com.br/evento/abertura-da-vii-semana-da-computacao-wecomp-do-ifsp-sao-carlos/3573760",
     vacancies: 160,
     location: "ONOVOLAB",
     description:
