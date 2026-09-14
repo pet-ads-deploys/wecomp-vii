@@ -51,7 +51,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Neste minicurso, você aprenderá os conceitos básicos do Git, capacitando-o a usar essa ferramenta no dia a dia. Também será apresentada uma visão geral do GitHub e como integrá-lo ao Vercel para realizar deploys automáticos de páginas web.",
     typeEvent: "Course",
     classification: "Free",
-    status: "Available",
+    status: "Closed",
   },
   {
     name: "Introdução ao Terminal Linux",
@@ -68,7 +68,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Este mini-curso apresentará uma breve história da filosofia do Software Livre e do surgimento do sistema operacional Linux, focando em seguida nos principais comandos para dominar o terminal e executar tarefas com agilidade e eficiência. Desde comandos básicos de navegação até operações mais avançadas, serão exploradas ferramentas essenciais para gestão de arquivos, instalação de programas, gerenciamento de processos, entre outros, de uma forma totalmente prática.",
     typeEvent: "Course",
     classification: "Free",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Introdução à Manufatura Aditiva e Impressão 3D: Do zero ao primeiro objeto",
@@ -119,7 +119,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz? Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz?",
     typeEvent: "Course",
     classification: "Intermediary",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Arquitetura e boas práticas para aplicações Android: do app simples à arquitetura escalável",
