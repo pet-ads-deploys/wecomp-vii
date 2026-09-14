@@ -170,7 +170,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Usar IA para escrever código é fácil. Fazer isso de forma confiável e barata é outro problema, e ele quase nunca está no prompt: está no harness, o conjunto de arquivos, regras e automações que cerca o modelo. O minicurso cobre os fundamentos do desenvolvimento guiado por agentes (token, janela de contexto, custo, alucinação) e as técnicas em uso hoje: engenharia de contexto, instruções persistentes no padrão aberto AGENTS.md, documentação como memória do projeto, spec-driven development, subagentes, skills, ferramentas via MCP e hooks de verificação automática. A parte prática monta um projeto pequeno do zero: ambiente configurado, repositório versionado no Git e o harness construído passo a passo, comparando o que a IA entrega sem preparo e com preparo. Independente de fornecedor, só ferramentas gratuitas.",
     typeEvent: "Course",
     classification: "Basic",
-    status: "Available",
+    status: "Closed",
   },
   {
     name: "Do chat ao agente: como estruturar projetos e áreas para trabalhar com IA",
