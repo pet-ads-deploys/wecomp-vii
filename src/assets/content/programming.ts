@@ -187,7 +187,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Em pouco mais de um ano, a IA deixou de ser uma conversa em uma janela de chat e passou a executar tarefas longas, acessar sistemas e rodar sem ninguém olhando. A pergunta mudou de lugar. Ela é menos sobre qual modelo usar e mais sobre como organizar contexto, procedimento e permissão para que o resultado seja confiável. Iremos nos aprofundar sobre o que é um agente, o que mudou nos modelos e quais peças sustentam esse tipo de uso: arquivos de contexto como MD's, Skills, memórias, conectores MCP e Plugins. Para cada peça, o que ela resolve, quando é desnecessária e a possibilidade de desenvolvimento interno. No fim, como colocar uma rotina em nuvem ou em cron local, o que isso custa, o que exige revisão humana e os erros mais comuns de quem pula a etapa de organização.",
     typeEvent: "Talk",
     classification: "Free",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Maratona Atlética de Programação",
@@ -221,7 +221,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Nem toda decisão vem acompanhada de certeza. Nesta conversa, Gustavo compartilha experiências de sua trajetória como empreendedor e os aprendizados que acumulou ao criar, conduzir e recomeçar um negócio. Após uma breve apresentação de sua trajetória, ele abre espaço para uma troca com o público sobre as escolhas, os erros, as incertezas e os aprendizados que fazem parte do caminho — especialmente aqueles que acontecem antes de uma empresa dar certo.",
     typeEvent: "Talk",
     classification: "Free",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Tudo virou IA: e agora, devo fazer pós-graduação?",
