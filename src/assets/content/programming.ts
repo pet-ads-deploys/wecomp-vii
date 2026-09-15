@@ -238,7 +238,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Todo mundo fala de IA, mas poucos param para enxergar o mapa completo: a pesquisa em Computação vai muito além do hype, e entender suas grandes áreas é o primeiro passo para escolher um caminho na academia ou no mercado. Nesta palestra, percorro as principais áreas de pesquisa em Computação e o que o mercado realmente procura hoje, com a Inteligência Artificial como o fio condutor do momento. Respondo também às perguntas que mais escuto: é possível fazer mestrado trabalhando? O doutorado vale para conseguir um emprego melhor? A partir da minha própria trajetória, mostro como a pesquisa acadêmica e a pesquisa aplicada se conectam na prática. ",
     typeEvent: "Talk",
     classification: "Free",
-    status: "Available",
+    status: "Closed",
   },
   {
     name: "O Fator Humano na Era da IA: Habilidades e conhecimentos para se preparar para o futuro e alguns cases do presente!",
@@ -255,7 +255,7 @@ export const programmingContent: ProgrammingProps[] = [
       "A Inteligência Artificial já é uma realidade no dia a dia corporativo, automatizando processos e redefinindo a forma como trabalhamos e até como criamos software. Mas qual é o papel do profissional humano nesse novo ecossistema? Esta palestra explorará as competências fundamentais para esse cenário, desde a construção de uma base técnica sólida até a resolução de problemas complexos, tomada de decisão e liderança. Compartilhando lições aprendidas ao escalar plataformas e gerenciar projetos internacionais de TI, a conversa mostrará como transformar a instabilidade do setor em oportunidade de inovação. Encerrando o painel, a equipe de RH compartilhará as perspectivas e o perfil profissional buscado pela nossa empresa (e pelo mercado de forma geral).",
     typeEvent: "Talk",
     classification: "Free",
-    status: "Available",
+    status: "Closed",
   },
   {
     name: "Introdução à Gestão de Vulnerabilidades de Segurança",
@@ -289,7 +289,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Aprenda, na prática, como fortalecer sua empregabilidade desenvolvendo um posicionamento profissional estratégico, utilizando o currículo e  LinkedIn de forma intencional e ampliando sua capacidade de acessar e conquistar novas oportunidades profissionais.",
     typeEvent: "Course",
     classification: "Free",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Campeonato de Truco",
