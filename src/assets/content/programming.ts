@@ -68,7 +68,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Este mini-curso apresentará uma breve história da filosofia do Software Livre e do surgimento do sistema operacional Linux, focando em seguida nos principais comandos para dominar o terminal e executar tarefas com agilidade e eficiência. Desde comandos básicos de navegação até operações mais avançadas, serão exploradas ferramentas essenciais para gestão de arquivos, instalação de programas, gerenciamento de processos, entre outros, de uma forma totalmente prática.",
     typeEvent: "Course",
     classification: "Free",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Introdução à Manufatura Aditiva e Impressão 3D: Do zero ao primeiro objeto",
@@ -102,7 +102,7 @@ export const programmingContent: ProgrammingProps[] = [
       "O minicurso apresenta os principais conceitos da programação funcional e discute as razões que tornam esse paradigma relevante no contexto atual do desenvolvimento de software. Serão abordadas ideias como funções puras, imutabilidade, composição de funções e funções de ordem superior, com exemplos simples que ajudem a entender sua aplicação. O curso também mostra como conceitos funcionais aparecem em linguagens e práticas de programação contemporâneas.",
     typeEvent: "Course",
     classification: "Basic",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Visão computacional na pratica: explorando embeddings e auto-encoders",
@@ -136,7 +136,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Neste minicurso, vamos partir de um aplicativo Android simples e funcional chamado Descubra, que realiza uma requisição a uma API pública da Wikipédia e apresenta na tela informações sobre um artigo aleatório. A atividade será construída de forma prática e colaborativa. Primeiro, vamos observar como uma API funciona e entender, por meio do Insomnia, quais dados o aplicativo irá consumir. Em seguida, partiremos de um projeto propositalmente simples, concentrado em uma única Activity, e exploraremos junto com os participantes os desafios que surgem quando uma aplicação começa a evoluir. A partir de situações práticas — como a necessidade de manter o estado da aplicação durante uma mudança de configuração, melhorar a organização do código e facilitar sua manutenção — vamos evoluir gradualmente o projeto, discutindo conceitos como ViewModel, gerenciamento de estados, separação de responsabilidades, Repository, interfaces, inversão de dependência, SOLID, entre outros. Também será discutido como uma arquitetura bem definida pode facilitar a evolução do produto. O objetivo não é apresentar uma arquitetura \"pronta\" ou uma receita para todos os aplicativos, mas mostrar, na prática, como problemas reais de um produto podem levar a decisões de arquitetura e como essas decisões ajudam a construir aplicações mais organizadas, testáveis e preparadas para evoluir.",
     typeEvent: "Course",
     classification: "Intermediary",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Testado por Quem? Quando a IA escreve o código e também os testes – Automatizando qualidade de software com agentes de IA",
@@ -153,7 +153,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Como garantir a qualidade quando a IA programa e testa? Esse minicurso demonstra na prática a integração de agentes de IA (Claude Code, Playwright MCP, Jira, GitHub CLI) no ciclo de desenvolvimento, mostrando como transformar testes em métricas reais e onde o julgamento humano continua essencial.",
     typeEvent: "Course",
     classification: "Intermediary",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Do prompt ao ambiente: preparando seu projeto para desenvolver com agentes de IA",
@@ -187,7 +187,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Em pouco mais de um ano, a IA deixou de ser uma conversa em uma janela de chat e passou a executar tarefas longas, acessar sistemas e rodar sem ninguém olhando. A pergunta mudou de lugar. Ela é menos sobre qual modelo usar e mais sobre como organizar contexto, procedimento e permissão para que o resultado seja confiável. Iremos nos aprofundar sobre o que é um agente, o que mudou nos modelos e quais peças sustentam esse tipo de uso: arquivos de contexto como MD's, Skills, memórias, conectores MCP e Plugins. Para cada peça, o que ela resolve, quando é desnecessária e a possibilidade de desenvolvimento interno. No fim, como colocar uma rotina em nuvem ou em cron local, o que isso custa, o que exige revisão humana e os erros mais comuns de quem pula a etapa de organização.",
     typeEvent: "Talk",
     classification: "Free",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Maratona Atlética de Programação",
@@ -221,7 +221,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Nem toda decisão vem acompanhada de certeza. Nesta conversa, Gustavo compartilha experiências de sua trajetória como empreendedor e os aprendizados que acumulou ao criar, conduzir e recomeçar um negócio. Após uma breve apresentação de sua trajetória, ele abre espaço para uma troca com o público sobre as escolhas, os erros, as incertezas e os aprendizados que fazem parte do caminho — especialmente aqueles que acontecem antes de uma empresa dar certo.",
     typeEvent: "Talk",
     classification: "Free",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Tudo virou IA: e agora, devo fazer pós-graduação?",
