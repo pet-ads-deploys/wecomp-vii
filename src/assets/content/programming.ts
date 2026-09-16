@@ -306,7 +306,7 @@ export const programmingContent: ProgrammingProps[] = [
       "O campeonato será disputado no formato de duplas, com limite de 16 duplas (32 participantes). A participação será destinada exclusivamente a alunos maiores de 18 anos da instituição. O jogo será disputado no estilo Truco Paulista, seguindo as regras definidas pela organização.",
     typeEvent: "Talk",
     classification: "Free",
-    status: "Available",
+    status: "LastVacancies",
   },
 ];
 
