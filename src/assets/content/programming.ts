@@ -85,7 +85,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Este minicurso apresenta os fundamentos da fabricação aditiva e da impressão 3D de forma prática e acessível. O aluno aprenderá a diferenciar os principais processos de manufatura, conhecerá os tipos de impressoras FDM e as características dos filamentos mais utilizados no mercado (como PLA, ABS e PETG). Além disso, será introduzido ao ecossistema de criação e preparação de peças, passando pela modelagem básica e pelas configurações essenciais nos softwares fatiadores para transformar projetos virtuais em objetos reais.",
     typeEvent: "Course",
     classification: "Basic",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Introdução à Programação Funcional",
@@ -153,7 +153,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Como garantir a qualidade quando a IA programa e testa? Esse minicurso demonstra na prática a integração de agentes de IA (Claude Code, Playwright MCP, Jira, GitHub CLI) no ciclo de desenvolvimento, mostrando como transformar testes em métricas reais e onde o julgamento humano continua essencial.",
     typeEvent: "Course",
     classification: "Intermediary",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Do prompt ao ambiente: preparando seu projeto para desenvolver com agentes de IA",
@@ -272,7 +272,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Vulnerabilidade não é sinônimo de risco, e uma mesma falha pode ter prioridades diferentes dependendo do contexto. Este minicurso apresenta os principais conceitos e referências para a gestão de vulnerabilidades, explorando CVE, CWE, CVSS, EPSS, KEV e SSVC e discutindo o que cada um responde — e o que não responde. Também será abordado o ciclo de gestão de vulnerabilidades, da identificação à priorização, tratamento e registro das decisões, incluindo situações em que não corrigir uma vulnerabilidade pode ser uma decisão técnica válida.",
     typeEvent: "Course",
     classification: "Basic",
-    status: "Available",
+    status: "LastVacancies",
   },
   {
     name: "Sua carreira começa agora: como se preparar para o mercado de trabalho",
