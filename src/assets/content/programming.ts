@@ -102,7 +102,7 @@ export const programmingContent: ProgrammingProps[] = [
       "O minicurso apresenta os principais conceitos da programação funcional e discute as razões que tornam esse paradigma relevante no contexto atual do desenvolvimento de software. Serão abordadas ideias como funções puras, imutabilidade, composição de funções e funções de ordem superior, com exemplos simples que ajudem a entender sua aplicação. O curso também mostra como conceitos funcionais aparecem em linguagens e práticas de programação contemporâneas.",
     typeEvent: "Course",
     classification: "Basic",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Visão computacional na pratica: explorando embeddings e auto-encoders",
