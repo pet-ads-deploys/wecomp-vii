@@ -119,7 +119,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz? Como a busca por imagens do Google funciona? Como seu celular consegue identificar você e desbloquear a tela usando apenas algumas imagens do seu rosto? Como um aplicativo consegue identificar a espécie de um pássaro só pelo som que ele faz?",
     typeEvent: "Course",
     classification: "Intermediary",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Arquitetura e boas práticas para aplicações Android: do app simples à arquitetura escalável",
