@@ -34,7 +34,7 @@ export const programmingContent: ProgrammingProps[] = [
       "A abertura oficial da VII Wecomp acontecerá no ONOVOLAB e contará com a presença de empresas parceiras. Não perca!",
     typeEvent: "Opening",
     classification: "Free",
-    status: "Available",
+    status: "Closed",
   },
   {
     name: "Git e GitHub: do mínimo que você precisa saber ao deploy no Vercel",
@@ -85,7 +85,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Este minicurso apresenta os fundamentos da fabricação aditiva e da impressão 3D de forma prática e acessível. O aluno aprenderá a diferenciar os principais processos de manufatura, conhecerá os tipos de impressoras FDM e as características dos filamentos mais utilizados no mercado (como PLA, ABS e PETG). Além disso, será introduzido ao ecossistema de criação e preparação de peças, passando pela modelagem básica e pelas configurações essenciais nos softwares fatiadores para transformar projetos virtuais em objetos reais.",
     typeEvent: "Course",
     classification: "Basic",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Introdução à Programação Funcional",
@@ -136,7 +136,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Neste minicurso, vamos partir de um aplicativo Android simples e funcional chamado Descubra, que realiza uma requisição a uma API pública da Wikipédia e apresenta na tela informações sobre um artigo aleatório. A atividade será construída de forma prática e colaborativa. Primeiro, vamos observar como uma API funciona e entender, por meio do Insomnia, quais dados o aplicativo irá consumir. Em seguida, partiremos de um projeto propositalmente simples, concentrado em uma única Activity, e exploraremos junto com os participantes os desafios que surgem quando uma aplicação começa a evoluir. A partir de situações práticas — como a necessidade de manter o estado da aplicação durante uma mudança de configuração, melhorar a organização do código e facilitar sua manutenção — vamos evoluir gradualmente o projeto, discutindo conceitos como ViewModel, gerenciamento de estados, separação de responsabilidades, Repository, interfaces, inversão de dependência, SOLID, entre outros. Também será discutido como uma arquitetura bem definida pode facilitar a evolução do produto. O objetivo não é apresentar uma arquitetura \"pronta\" ou uma receita para todos os aplicativos, mas mostrar, na prática, como problemas reais de um produto podem levar a decisões de arquitetura e como essas decisões ajudam a construir aplicações mais organizadas, testáveis e preparadas para evoluir.",
     typeEvent: "Course",
     classification: "Intermediary",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Testado por Quem? Quando a IA escreve o código e também os testes – Automatizando qualidade de software com agentes de IA",
@@ -204,7 +204,7 @@ export const programmingContent: ProgrammingProps[] = [
       "A Maratona de Programação, realizada pela Atlética durante a WECOMP, tem como objetivo estimular o trabalho em equipe, o pensamento lógico e a capacidade de resolver problemas de forma rápida e eficiente. As equipes deverão ser formadas por três integrantes e possuir um nome. A competição terá duração de três horas, durante as quais os participantes deverão solucionar uma série de problemas de programação. Vence a equipe que resolver o maior número de problemas no menor tempo possível.",
     typeEvent: "Course",
     classification: "Free",
-    status: "Available",
+    status: "Closed",
   },
   {
     name: "O lado B de empreender: o que acontece antes de dar certo?",
@@ -272,7 +272,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Vulnerabilidade não é sinônimo de risco, e uma mesma falha pode ter prioridades diferentes dependendo do contexto. Este minicurso apresenta os principais conceitos e referências para a gestão de vulnerabilidades, explorando CVE, CWE, CVSS, EPSS, KEV e SSVC e discutindo o que cada um responde — e o que não responde. Também será abordado o ciclo de gestão de vulnerabilidades, da identificação à priorização, tratamento e registro das decisões, incluindo situações em que não corrigir uma vulnerabilidade pode ser uma decisão técnica válida.",
     typeEvent: "Course",
     classification: "Basic",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Sua carreira começa agora: como se preparar para o mercado de trabalho",
@@ -289,7 +289,7 @@ export const programmingContent: ProgrammingProps[] = [
       "Aprenda, na prática, como fortalecer sua empregabilidade desenvolvendo um posicionamento profissional estratégico, utilizando o currículo e  LinkedIn de forma intencional e ampliando sua capacidade de acessar e conquistar novas oportunidades profissionais.",
     typeEvent: "Course",
     classification: "Free",
-    status: "LastVacancies",
+    status: "Closed",
   },
   {
     name: "Campeonato de Truco",
@@ -306,7 +306,7 @@ export const programmingContent: ProgrammingProps[] = [
       "O campeonato será disputado no formato de duplas, com limite de 16 duplas (32 participantes). A participação será destinada exclusivamente a alunos maiores de 18 anos da instituição. O jogo será disputado no estilo Truco Paulista, seguindo as regras definidas pela organização.",
     typeEvent: "Talk",
     classification: "Free",
-    status: "LastVacancies",
+    status: "Closed",
   },
 ];
 
